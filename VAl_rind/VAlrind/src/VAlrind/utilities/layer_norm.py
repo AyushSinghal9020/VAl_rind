@@ -1,0 +1,1 @@
+layer_norm = lambda value : (value - value.min()) / ((value.max() - value.min()))
