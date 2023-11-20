@@ -67,7 +67,9 @@ And thus making our formula for the output matrix.
 
 ****
 
-We denote any Bivariate Function (π) to be and for this Bivariate Function 
+## For any Bivariate Function
+
+We denote any Bivariate Function to be (π) and for this Bivariate Function 
 
 $$O_{0,0} = \sum((f_-col_0 (π) f_-row) * (s_-row_0 (π) s_-col))$$
 
