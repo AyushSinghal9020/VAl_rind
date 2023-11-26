@@ -1,4 +1,5 @@
 import numpy as np
+from utilities import Parameters
 
 class embedding: 
 
@@ -8,7 +9,7 @@ class embedding:
         self.out_feats = out_feats
 
         self.feats = np.random.rand(self.in_feats , self.out_feats)
-        self.parameters = [self.feats]
+        self.parameters = Parameters('Embedding' , self.feats)
 
     def forward(self , inps):
 
