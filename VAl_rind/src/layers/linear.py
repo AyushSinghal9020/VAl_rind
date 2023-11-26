@@ -1,4 +1,4 @@
-from utilities import matmul
+from utilities import matmul , Parameters
 import numpy as np
 
 class linear: 
@@ -11,6 +11,11 @@ class linear:
         self.in_col = np.random.uniform(0.01 , 0.001 , self.in_feats)
         self.out_col = np.random.uniform(0.01 , 0.001 , self.out_feats)
 
+
+        self.params = [self.in_col , self.out_col] 
+        
+        self.params = [Parameters('Linear' , val) for val in self.params]
+        
     def forward(self , inps):
 
         if len(inps.shape) == 1 : # 1D
