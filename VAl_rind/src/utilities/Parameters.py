@@ -1,4 +1,4 @@
-class Parameter :
+class Parameters :
     
     all_params = []
     
@@ -7,4 +7,4 @@ class Parameter :
         self.name = name
         self.params = params
         
-        Parameter.all_params.append((self))
+        Parameters.all_params.append((self))
