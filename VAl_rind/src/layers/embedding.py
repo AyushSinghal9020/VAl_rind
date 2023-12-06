@@ -1,7 +1,8 @@
+from nn import Module
 import numpy as np
 from utilities import Parameters
 
-class embedding: 
+class embedding(Module): 
 
     def __init__(self , in_feats , out_feats): 
         
@@ -9,7 +10,7 @@ class embedding:
         self.out_feats = out_feats
 
         self.feats = np.random.rand(self.in_feats , self.out_feats)
-        self.parameters = Parameters('Embedding' , self.feats)
+        self.parameters = Parameters(self.feats)
 
     def forward(self , inps):
 
