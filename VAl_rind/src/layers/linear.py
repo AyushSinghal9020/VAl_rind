@@ -1,7 +1,9 @@
+from nn import Module
+
 from utilities import matmul , Parameters
 import numpy as np
 
-class linear: 
+class linear(Module): 
 
     def __init__(self , in_feats , out_feats):
 
@@ -14,7 +16,7 @@ class linear:
 
         self.params = [self.in_col , self.out_col] 
         
-        self.params = [Parameters('Linear' , val) for val in self.params]
+        self.params = [Parameters(val) for val in self.params]
         
     def forward(self , inps):
 
